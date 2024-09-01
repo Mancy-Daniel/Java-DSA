@@ -8,16 +8,16 @@ public class BSsqrt {
         System.out.printf("%.3f", search(n,p));
 
     }
-    static double search(int n, int p){
+    static double search(int x, int p){
         int start = 0;
-        int end = n;
+        int end = x;
         double root = 0.0;
         while(start <= end){
             int mid = start + (end - start)/2;
-            if((mid * mid) == n){
+            if((mid * mid) == x){
                 root = mid;
             }
-            else if((mid * mid) > n){
+            else if((mid * mid) > x){
                 end = mid - 1;
             }
             else {
@@ -26,7 +26,7 @@ public class BSsqrt {
         }
         double incr = 0.1;
         for (int i = 0; i < p; i++) {
-            while(root * root < n){
+            while(root * root < x){
                 root = root + incr;
             }
             root = root - incr;

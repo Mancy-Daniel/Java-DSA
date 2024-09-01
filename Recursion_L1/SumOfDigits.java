@@ -1,5 +1,5 @@
 package Recursion_L1;
-
+// Q.5 um of Digits
 public class SumOfDigits {
     public static void main(String[] args) {
         int n = 12888885;

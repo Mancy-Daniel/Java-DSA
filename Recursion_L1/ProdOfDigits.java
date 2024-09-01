@@ -1,5 +1,5 @@
 package Recursion_L1;
-
+// Q.6 --> Product of Digits
 public class ProdOfDigits {
     public static void main(String[] args) {
         int n = 555;
